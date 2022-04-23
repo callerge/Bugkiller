@@ -1,0 +1,21 @@
+Bugkiller创建过程记录
+1.django-admin startproject Bugkiller
+	创建Bugkiller工程并建立git仓库
+2.python3 manage.py startapp useradmin
+	创建useradmin和killer,okr等模块
+3.Bugkiller/settings.py
+	工程配置文件,包括时区和killer数据库
+	
+	进入mysql
+	mysql -u root -p
+	创建数据库killer
+	create database study killer charset utf8;
+4.增加一个登录页面useradmin/login
+	创建html页面->useradmin/templates/useradmin/login.html
+	view.py定义方法处理页面->def login_view(request):
+	应用路由配置view的路由->path('login', views.login_view)
+	主路由配置应用路由->path('useradmin/', include('useradmin.urls')),
+5.生成原始数据表
+	python3 manage.py makemigrations
+	python3 manage.py migrate
+
