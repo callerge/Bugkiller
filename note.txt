@@ -18,4 +18,6 @@ Bugkiller创建过程记录
 5.生成原始数据表
 	python3 manage.py makemigrations
 	python3 manage.py migrate
+6.python3 manage.py createsuperuser --username=jliang
+	创建一个超级管理员用户
 
