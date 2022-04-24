@@ -13,7 +13,8 @@ def login_view(request):
         password = request.POST['password']
         user=authenticate(username=username,password=password)
         if not user:
-            return HttpResponse("--用户名或密码错误--")
+            message = "用户名或密码错误!"
+            return render(request,'useradmin/login.html',{'error_msg':message})
         else:
             login(request,user)
             return HttpResponse("--成功--")
