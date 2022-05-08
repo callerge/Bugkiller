@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class BeginnerguideConfig(AppConfig):
+class BeginConfig(AppConfig):
     name = 'begin'

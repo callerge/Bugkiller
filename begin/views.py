@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 @login_required
-def beginnerguide_view(request):
+def begin_view(request):
     user = request.user
     # return HttpResponse("欢迎%s"%(user.username))
     return render(request, 'begin/begin.html')

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'okr',
     'note',
     'killer',
+    'begin',
 ]
 
 MIDDLEWARE = [
