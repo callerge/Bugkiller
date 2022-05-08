@@ -9,13 +9,18 @@
 </head>
 <body>
 {#固定顶部导航栏#}
-<a href="../killer/killer" target="_self">BugKiller</a>
-<a href="../note/note" target="_blank">笔记系统</a>
-<a href="../okr/okr " target="_blank">OKR系统</a>
-<a href="../process/process" target="_blank">工作流程</a>
-<a href="../tools/tools" target="_blank">常用工具</a>
-<a href="../begin/begin" target="_blank">新手入门</a>
+{% load static %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+<div class="topnav">
+    <a href="../killer/killer" target="_self">BugKiller</a>
+    <a href="../note/note" target="_blank">笔记系统</a>
+    <a href="../okr/okr " target="_blank">OKR系统</a>
+    <a href="../process/process" target="_blank">工作流程</a>
+    <a href="../tools/tools" target="_blank">常用工具</a>
+    <a href="../begin/begin" target="_blank">新手入门</a>
 <br>
+</div>
+
 {#中间内容#}
 
 {% block killerbody %}
