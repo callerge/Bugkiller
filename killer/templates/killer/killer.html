@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>欢迎来到killer！</h1>
-</body>
-</html>
+{% extends 'killer/index.html' %}
+
+{% block killertitle %}
+<title>BugKiller</title>
+{% endblock %}
+
+{% block killerbody %}
+<h1>这是Bugkiller</h1>
+{% endblock %}

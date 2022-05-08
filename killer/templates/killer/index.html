@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block killertitle %}
+    <title>主页</title>
+    {% endblock %}
+
+</head>
+<body>
+{#固定顶部导航栏#}
+<a href="">BugKiller</a>
+<a href="">笔记系统</a>
+<a href="">OKR系统</a>
+<a href="">工作流程</a>
+<a href="">常用工具</a>
+<a href="">新手入门</a>
+<br>
+{#中间内容#}
+
+{% block killerbody %}
+<h>欢迎来到主页</h>
+    <br>
+{% endblock %}
+
+{#固定底部导航栏#}
+<a href="https://unisupport.unisoc.com/" target="_blank">Isupport</a>
+
+</body>
+</html>
