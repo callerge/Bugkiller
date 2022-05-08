@@ -21,6 +21,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('killer/', include('killer.urls')),
     path('useradmin/', include('useradmin.urls')),
+    path('note/', include('note.urls')),
+    path('okr/', include('okr.urls')),
+    path('process/', include('process.urls')),
+    path('tools/', include('tools.urls')),
+    path('begin/', include('begin.urls')),
     #http://1270.0.1:8000/index
     path('index',views.index_view)
 ]

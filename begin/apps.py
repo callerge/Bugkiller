@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class BeginnerguideConfig(AppConfig):
-    name = 'beginnerguide'
+    name = 'begin'
