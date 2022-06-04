@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>菜鸟教程 - 学的不仅是技术，更是梦想！</title>
+    <link href="runoob.css" rel="stylesheet" type="text/css"/>
+    <link href="font.css" rel="stylesheet" type="text/css"/>
+    <style>
+            body{
+	margin:0;
+	background-color:#f6f6f6;
+}
+
+.div_top{
+	width:100%;
+	height:124px;
+}
+.top_left{
+	width:50%;
+	height:90px;
+
+	/*background:url(./images/runoob-logo.png);*/
+	float:left;
+}
+.top_img{
+	margin-top:28px;
+	margin-left:19.5%;
+}
+.top_right{
+	width:29.8%;
+	height:41px;
+	margin-left:11%;
+	float:left;
+	margin-top:28px;
+	background: #eeefed;
+	border-radius: 3px;
+}
+.top_input{
+	margin:2px;
+	width:445px;
+	height:31px;
+	border: 1px solid #c8c8c8;
+    border-radius: 3px;
+	font-weight: 400;
+	font-size:15px;
+}
+.top_menu{
+	width:100%;
+	height:34px;
+	background-color:#96b97d;
+	float:left;
+	white-space: nowrap;
+	font-weight: 400;
+    font-size: 13.5px;
+	font-family: proxima-nova,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.top_ul{
+	margin-left:6.5%;
+	list-style: none;
+	margin-top:0;
+}
+.div_li{
+	float:left;
+	margin-left:1%;
+}
+li{
+	display: inline;
+	line-height: 34px;
+	color:#fff;
+	cursor: pointer;
+	margin-left:1%;
+	height:34px;
+}
+li:hover {
+    color: #e3efd9;
+}
+.div_bottom{
+	width:100%;
+	height:900px;
+	margin-top:20px;
+}
+.div_menu{
+	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+	width:11.5%;
+	height:434px;
+	margin-left:5%;
+	float:left;
+	border:0.5px solid  rgba(0,0,0,.1);
+	font-size:14px;
+	border-radius: 3px;
+	line-height:35px;
+}
+.div_right_menu{
+	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+	width:11.5%;
+	height:434px;
+	margin-right:5%;
+	float:right;
+	border:0.5px solid  rgba(0,0,0,.1);
+	font-size:14px;
+	border-radius: 3px;
+	line-height:35px;
+}
+.div_menu i{
+	margin-left: 4%;
+}
+.menu{
+	height:28px;
+	width:99.8%;
+	color: grey;
+	background-color: #f2f2f2;div_block
+	line-height:28px;
+}
+.menu1{
+	height:40px;
+	width:99%;
+	color: grey;
+	color: #333;
+	background:#fff;
+	border-radius: 3px;
+	margin-left:1%;
+}
+.menu2{
+	height:40px;
+	width:99%;
+	color: grey;
+	color: #333;
+	border-radius: 3px;
+}
+.div_block{
+	width:64.5%;
+	height:900px;
+	float:left;
+	margin-left:1%;
+	border:1px solid  rgba(0,0,0,.1);
+	border-radius: 3px;;
+	background-color:#fff;
+}
+.block1{
+	width:96%;
+	height:300px;
+	margin-left:2%;
+	margin-top:1.5%;
+}
+.up_head h2{
+	font-size: 18px;
+	border-bottom: 1px solid #eaeaea;
+}
+.up_block{
+	width: 28%;
+    margin: 0 8px 10px 0;
+    text-align: left;
+    height: 80px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 6px 16px;
+	font-size: 12px;
+	color:#666;
+	float:left;
+
+}
+.up_block h4{
+	color: #64854c;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    text-align: left;
+}
+.up_block img{
+	margin: 0 5px 8px 5px;
+	float:left;
+}
+.block2{
+	width:96%;
+	height:300px;
+	margin-left:2%;
+	margin-top:5.5%;
+}
+.current {
+    background-image: url(http://www.runoob.com/wp-content/themes/runoob/assets/img/navarrow.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+    </style>
+</head>
+<body>
+<!--顶部-->
+<div class="div_top">
+    <div class="top_left">
+        <img class="top_img" src="http://www.runoob.com/wp-content/themes/runoob//assets/img/runoob-logo.png"></img>
+    </div>
+    <div class="top_right">
+        <input class="top_input" type="text" value="" placeholder="    搜索......"/>
+    </div>
+<!--    顶部导航栏-->
+    <div class="top_menu">
+        <ul class="top_ul">
+            <div class="div_li current" name="li">
+                <li>首页</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>菜鸟笔记</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>菜鸟工具</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>参考手册</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>用户笔记</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>测验/考试</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>本地书签</li>
+            </div>
+            <div class="div_li" name="li">
+                <li>登录</li>
+            </div>
+        </ul>
+    </div>
+</div>
+<!--内容块-->
+<div class="div_bottom">
+<!--    左侧导航栏-->
+    <div class="div_menu">
+        <div class="menu"><i class="fa fa-reorder"></i>左侧导航栏--模块单选</div>
+        <div class="menu1" id="cate1">
+            <i class="fa fa-external-link"></i> HTML / CSS
+        </div>
+        <div class="menu2" id="cate2">
+            <i class="fa fa-external-link"></i> JavaScript
+        </div>
+        <div class="menu1" id="cate3">
+            <i class="fa fa-external-link"></i> 服务端
+        </div>
+        <div class="menu2" id="cate4">
+            <i class="fa fa-external-link"></i> 数据库
+        </div>
+        <div class="menu1" id="cate5">
+            <i class="fa fa-external-link"></i> 移动端
+        </div>
+        <div class="menu2" id="cate6">
+            <i class="fa fa-external-link"></i> XML 教程
+        </div>
+        <div class="menu1" id="cate7">
+            <i class="fa fa-external-link">ASP.NET</i>
+        </div>
+        <div class="menu2" id="cate8">
+            <i class="fa fa-external-link">Web Service</i>
+        </div>
+        <div class="menu1" id="cate9">
+            <i class="fa fa-external-link">开发工具</i>
+        </div>
+        <div class="menu2" id="cate10">
+            <i class="fa fa-external-link">网站建设</i>
+        </div>
+    </div><!--左侧导航栏结束-->
+<!--    中间内容快-->
+    <div class="div_block">
+        <div class="block1">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i>中间导航栏---现象</h2>
+            </div>
+            <div class="up_block">
+                <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                    <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+            </div>
+            <div class="up_block">
+                <h4>【学习 HTML5】</h4>
+                <img class="codeicon codeicon-36" height="36" width="36"
+                     src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                <strong>HTML5 是下一代 HTML 标准</strong>
+            </div>
+
+        </div>
+        <div class="block2">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i> 中间导航栏---可能结果</h2>
+            </div>
+            <div class="up_block">
+                <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                    <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+            </div>
+            <div class="up_block">
+                <h4>【学习 HTML5】</h4>
+                <img class="codeicon codeicon-36" height="36" width="36"
+                     src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                <strong>HTML5 是下一代 HTML 标准</strong>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i> 中间导航栏---排查方法</h2>
+            </div>
+            <div class="up_block">
+                <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                    <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+            </div>
+            <div class="up_block">
+                <h4>【学习 HTML5】</h4>
+                <img class="codeicon codeicon-36" height="36" width="36"
+                     src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                <strong>HTML5 是下一代 HTML 标准</strong>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i> 中间导航栏---修改方案</h2>
+            </div>
+            <div class="up_block">
+                <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                    <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+            </div>
+            <div class="up_block">
+                <h4>【学习 HTML5】</h4>
+                <img class="codeicon codeicon-36" height="36" width="36"
+                     src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                <strong>HTML5 是下一代 HTML 标准</strong>
+            </div>
+        </div>
+        <script>
+				function show(){
+					var li = document.getElementsByName("li");
+					for(var i=0;i<8;i++){
+						li[i].onclick = function (){
+							for(var j=0;j<8;j++){
+								li[j].className = "div_li";
+							}
+							this.className += " current";
+						}
+					}
+				}
+				show();
+
+        </script>
+    </div><!--中间内容块结束-->
+<!--    右侧导航栏-->
+    <div class="div_right_menu">
+        <div class="menu"><i class="fa fa-reorder"></i>右侧导航栏</div>
+        <div class="menu1" id="xx1">
+            <i class="fa fa-external-link"></i> HTML / CSS
+        </div>
+        <div class="menu2" id="xx2">
+            <i class="fa fa-external-link"></i> JavaScript
+        </div>
+        <div class="menu1" id="xx3">
+            <i class="fa fa-external-link"></i> 服务端
+        </div>
+        <div class="menu2" id="xx4">
+            <i class="fa fa-external-link"></i> 数据库
+        </div>
+        <div class="menu1" id="xx5">
+            <i class="fa fa-external-link"></i> 移动端
+        </div>
+        <div class="menu2" id="xx6">
+            <i class="fa fa-external-link"></i> XML 教程
+        </div>
+        <div class="menu1" id="xx7">
+            <i class="fa fa-external-link">ASP.NET</i>
+        </div>
+        <div class="menu2" id="xx8">
+            <i class="fa fa-external-link">Web Service</i>
+        </div>
+        <div class="menu1" id="xx9">
+            <i class="fa fa-external-link">开发工具</i>
+        </div>
+        <div class="menu2" id="xx10">
+            <i class="fa fa-external-link">网站建设</i>
+        </div>
+    </div><!--右侧导航栏结束-->
+</div><!--内容块结束-->
+</body>
+</html>
