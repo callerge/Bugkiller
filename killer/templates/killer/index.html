@@ -1,35 +1,199 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     {% block killertitle %}
-    <title>主页</title>
+        <title>主页</title>
+        <base href="/">
     {% endblock %}
+    <base href="/">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
 </head>
 <body>
 {#固定顶部导航栏#}
-{% load static %}
-<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
-<div class="topnav">
-    <a href="../killer/killer" target="_self">BugKiller</a>
-    <a href="../note/note" target="_blank">笔记系统</a>
-    <a href="../okr/okr " target="_blank">OKR系统</a>
-    <a href="../process/process" target="_blank">工作流程</a>
-    <a href="../tools/tools" target="_blank">常用工具</a>
-    <a href="../begin/begin" target="_blank">新手入门</a>
-<br>
+<div class="top_menu">
+    <ul class="top_ul">
+        <div class="div_li current" name="li">
+            <li><a href="../killer/killer" target="_self">BugKiller</a></li>
+        </div>
+        <div class="div_li" name="li">
+            <li><a href="../note/note" target="_blank">笔记系统</a></li>
+        </div>
+        <div class="div_li" name="li">
+            <li><a href="../okr/okr " target="_blank">OKR系统</a></li>
+        </div>
+        <div class="div_li" name="li">
+            <li><a href="../process/process" target="_blank">工作流程</a></li>
+        </div>
+        <div class="div_li" name="li">
+            <li><a href="../tools/tools" target="_blank">常用工具</a></li>
+        </div>
+        <div class="div_li" name="li">
+            <li><a href="../begin/begin" target="_blank">新手入门</a></li>
+        </div>
+    </ul>
+</div>
 </div>
 
 {#中间内容#}
+<!--内容块-->
+<div class="div_bottom">
+    <!--    左侧导航栏-->
+    {% block left %}
+        <div class="div_menu">
+            <div class="menu"><i class="fa fa-reorder"></i>模块选择</div>
+            <div class="menu1" id="cate1">
+                <i class="fa fa-external-link"></i> GPS
+            </div>
+            <div class="menu2" id="cate2">
+                <i class="fa fa-external-link">屏</i>
+            </div>
+            <div class="menu1" id="cate3">
+                <i class="fa fa-external-link">指纹</i>
+            </div>
+            <div class="menu2" id="cate4">
+                <i class="fa fa-external-link">性能</i>
+            </div>
+            <div class="menu1" id="cate5">
+                <i class="fa fa-external-link">通话</i>
+            </div>
+            <div class="menu2" id="cate6">
+                <i class="fa fa-external-link">相机</i>
+            </div>
+            <div class="menu1" id="cate7">
+                <i class="fa fa-external-link">电池</i>
+            </div>
+        </div><!--左侧导航栏结束-->
+    {% endblock %}
+    <!--    中间内容快-->
+    {% block main %}
+        <div class="div_block">
+            <div class="block1">
+                <div class="up_head">
+                    <h2><i class="fa fa-list"></i>中间导航栏---现象</h2>
+                </div>
+                <div class="up_block">
+                    <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                        <img class="codeicon codeicon-36" height="36" width="36"
+                             src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                        <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+                </div>
+                <div class="up_block">
+                    <h4>【学习 HTML5】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                    <strong>HTML5 是下一代 HTML 标准</strong>
+                </div>
 
-{% block killerbody %}
-<h>欢迎来到主页</h>
-    <br>
-{% endblock %}
+            </div>
+            <div class="block2">
+                <div class="up_head">
+                    <h2><i class="fa fa-list"></i> 中间导航栏---可能结果</h2>
+                </div>
+                <div class="up_block">
+                    <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                        <img class="codeicon codeicon-36" height="36" width="36"
+                             src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                        <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+                </div>
+                <div class="up_block">
+                    <h4>【学习 HTML5】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                    <strong>HTML5 是下一代 HTML 标准</strong>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="up_head">
+                    <h2><i class="fa fa-list"></i> 中间导航栏---排查方法</h2>
+                </div>
+                <div class="up_block">
+                    <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                        <img class="codeicon codeicon-36" height="36" width="36"
+                             src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                        <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+                </div>
+                <div class="up_block">
+                    <h4>【学习 HTML5】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                    <strong>HTML5 是下一代 HTML 标准</strong>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="up_head">
+                    <h2><i class="fa fa-list"></i> 中间导航栏---修改方案</h2>
+                </div>
+                <div class="up_block">
+                    <a class="item-top item-1"><h4>【学习 HTML】</h4>
+                        <img class="codeicon codeicon-36" height="36" width="36"
+                             src="https://img-blog.csdnimg.cn/2022010706031058182.png">
+                        <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
+                </div>
+                <div class="up_block">
+                    <h4>【学习 HTML5】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36"
+                         src="https://img-blog.csdnimg.cn/2022010706031045056.png">
+                    <strong>HTML5 是下一代 HTML 标准</strong>
+                </div>
+            </div>
+            <script>
+                function show() {
+                    var li = document.getElementsByName("li");
+                    for (var i = 0; i < 8; i++) {
+                        li[i].onclick = function () {
+                            for (var j = 0; j < 8; j++) {
+                                li[j].className = "div_li";
+                            }
+                            this.className += " current";
+                        }
+                    }
+                }
 
-{#固定底部导航栏#}
-<a href="https://unisupport.unisoc.com/" target="_blank">Isupport</a>
+                show();
+
+            </script>
+        </div><!--中间内容块结束-->
+    {% endblock %}
+    <!--    右侧导航栏-->
+    <div class="div_right_menu">
+        <div class="menu">常用网址导航栏</div>
+        <div class="menu1" id="xx1">
+            <a href="https://unisupport.unisoc.com/" target="_blank">Isupport</a>
+        </div>
+        <div class="menu2" id="xx2">
+            <a href="http://spcss.unisoc.com:2008/cqweb/" target="_blank">CQ</a>
+        </div>
+        <div class="menu1" id="xx3">
+            <a href="http://192.168.19.55:9093/bugfree/index.php/" target="_blank">Bugfree</a>
+        </div>
+        <div class="menu2" id="xx4">
+            <a href="http://192.168.1.128/hdwiki/index.php" target="_blank">hdwiki</a>
+        </div>
+        <div class="menu1" id="xx5">
+            <a href="http://119.147.211.154:9090/buglist/view.php" target="_blank">Mantis</a>
+        </div>
+        <div class="menu2" id="xx6">
+            <a href="http://119.147.211.154:9097/#/dashboard/self" target="_blank">Gerrit</a>
+        </div>
+        <div class="menu1" id="xx7">
+            <a href="https://exmail.qq.com/login" target="_blank">企业邮箱</a>
+        </div>
+        <div class="menu2" id="xx8">
+            <a href="http://oa.waterworld.com.cn:8888/login.jsp" target="_blank">OA系统</a>
+        </div>
+        <div class="menu1" id="xx9">
+            <a href="http://dmtydjira.hisense.com:8080/login.jsp" target="_blank">jira</a>
+        </div>
+        <div class="menu2" id="xx10">
+            <a href="https://docs.qq.com/sheet/DTXZodUp2a0F2bU5a?tab=BB08J2&c=G26A0A0" target="_blank">软件进度在线表</a>
+        </div>
+    </div><!--右侧导航栏结束-->
+</div><!--内容块结束-->
+
 
 </body>
 </html>

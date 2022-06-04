@@ -21,3 +21,5 @@ Bugkiller创建过程记录
 6.python3 manage.py createsuperuser --username=jliang
 	创建一个超级管理员用户
 
+7.使用firefox调试时,遇到css修改不生效的问题,最后解决方法是清除firefox的缓存
+
