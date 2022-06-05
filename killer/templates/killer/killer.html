@@ -1,19 +1,45 @@
 {% extends 'killer/index.html' %}
 
 {% block killertitle %}
-<title>BugKiller</title>
+    <title>BugKiller</title>
 {% endblock %}
 
-{% block killerbody %}
-<h1>这是Bugkiller</h1>
-    {#    问题模块#}
-    <div>问题模块</div>
-    {#    选择现象#}
-    <div>选择现象</div>
-    {#    可能结果#}
-    <div>可能结果</div>
-    {#    排查方法#}
-    <div>排查方法</div>
-    {#    解决方案#}
-    <div>解决方案</div>
+{% block left %}
+    {#        最终是要从数据库读出来，通过单选框的方式#}
+    <div class="div_menu">
+        <div class="menu"><i class="fa fa-reorder"></i>模块选择</div>
+        <ul class="none">
+            {% for item in module_list %}
+{#                <li>{{ item }}</li>#}
+                <li><input type="radio" name="module"/>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+    </div><!--左侧导航栏结束-->
+{% endblock %}
+
+{% block main %}
+    <div class="div_block">
+        <div class="block1">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i>中间导航栏---现象</h2>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i> 中间导航栏---可能结果</h2>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i> 中间导航栏---排查方法</h2>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="up_head">
+                <h2><i class="fa fa-list"></i> 中间导航栏---修改方案</h2>
+            </div>
+        </div>
+
+    </div><!--中间内容块结束-->
 {% endblock %}

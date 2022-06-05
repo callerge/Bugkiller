@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     {% block killertitle %}
         <title>主页</title>
-        <base href="/">
     {% endblock %}
-    <base href="/">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
 </head>
@@ -33,6 +31,9 @@
         </div>
         <div class="div_li" name="li">
             <li><a href="../begin/begin" target="_blank">新手入门</a></li>
+        </div>
+        <div class="div_li_r" name="li">
+            <li>欢迎 {{ username }}</li>
         </div>
     </ul>
 </div>
@@ -140,22 +141,7 @@
                     <strong>HTML5 是下一代 HTML 标准</strong>
                 </div>
             </div>
-            <script>
-                function show() {
-                    var li = document.getElementsByName("li");
-                    for (var i = 0; i < 8; i++) {
-                        li[i].onclick = function () {
-                            for (var j = 0; j < 8; j++) {
-                                li[j].className = "div_li";
-                            }
-                            this.className += " current";
-                        }
-                    }
-                }
 
-                show();
-
-            </script>
         </div><!--中间内容块结束-->
     {% endblock %}
     <!--    右侧导航栏-->
